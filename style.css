@@ -1,0 +1,177 @@
+body{    background: linear-gradient(to bottom right, #039B32, white);}
+
+p{margin-left: 2%;}
+
+.Header {text-align: center;
+        font-weight:bold;
+        font-size: 17px;
+        text-decoration: underline;
+        color:black;
+        font-family: Arial;}
+
+.text {
+  font-family: Arial
+}
+
+#statsmenu1, #statsmenu2, #statsmenu3 {
+  margin-left: 10%;
+  height: 10%;
+  width: 25%;
+  font-weight:bold;
+  font-size: 14px;
+  color:white;
+  font-family: Arial;
+  overflow-wrap: break-word;
+}
+
+
+#wrapper {
+
+	height:600px;
+	width:100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+#menu {
+	height:100%;
+  background-color:transparent;
+  width: 33%;
+  float: right;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 8px
+    /*min-height: 750px;*/
+}
+
+
+#vis {
+    height:60%;
+    position: relative;
+    width: 66%;
+    min-height: 50px;
+    float: left;
+    background-color:rgb(255,255,255,0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+#stats {
+    height:40%;
+    width: 66%;
+    float: left;
+    background: rgba(200, 54, 54, 0);
+    border: 1px solid white;
+    border-radius: 8px
+}
+
+#barchart {
+  border-radius: 8px;
+  height:90%;
+  width: 100%;
+}
+
+#slider {
+	margin-top: 5%;
+	margin-left: 2%;
+    vertical-align:middle;
+
+}
+.but {
+float:right;
+margin-right: 2px;
+}
+
+
+#dropdown {
+float:right;
+margin-right: 2px;
+display: inline;
+}
+
+.regression_line {
+    stroke-opacity: 0.25;
+}
+
+#map {
+    height:69%;
+    width: 95%;
+    margin-left: 2%;
+    border: 1px solid white;
+    border-radius: 8px;
+    opacity : 1;
+
+}
+
+.clubinfo {
+  position: absolute;                         
+  padding: 2px;             
+  font: 10.5px sans-serif;        
+  background: lightsteelblue;   
+  border: 1px;
+  border-color: white;
+  border-style: solid;        
+  border-radius: 8px;           
+  pointer-events: none; 
+  display: inline;        
+}
+
+.stadiuminfo {
+  margin:15px;                       
+  padding: 2px;             
+  font: 14px sans-serif;        
+  background: lightsteelblue;   
+  border: 1px;
+  border-color: black;
+  border-style: solid;    
+  border-radius: 8px;           
+  position: relative;
+  float: right; 
+  display: inline;
+  z-index: 500;
+
+}
+
+.regressiontext {
+ fill:#F3ECEC;
+ font-size:18;
+ opacity: 0;
+}
+
+.label {font-size: 9px;
+        color:black;}
+
+.label1 {font-size: 15px;
+        color:black;
+        font-family: Arial}
+
+.x.axis line{
+  stroke: white;
+}
+
+.axis path{
+  stroke: white;
+}
+
+.x.axis text{
+  fill: white;
+} 
+
+.y.axis line{
+  stroke: white;
+}
+
+.axis path{
+  stroke: white;
+}
+
+.y.axis text{
+  fill: white;
+
+
+
+
+
+} 

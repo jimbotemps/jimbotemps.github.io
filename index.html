@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Premier League Wage Data Visualisation </title>
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<script src="d3.min.js"> </script>
+		<link rel="stylesheet" href="leaflet.css" />
+		<script src="leaflet.js"></script>
+	</head>
+	<body>
+    	<div id='wrapper'>
+    		<div id="vis">
+    		</div>
+    		<div id="menu">
+    		<p class="Header">Selections</p>
+    		<form id='slider'>
+	        	<label class="label1"for="year">Select a season using slider: (2000: 2000/2001 season) <br /> </label>
+	        	<input type="range" min=2000 max=2015 step=1 id="season" value=2015 oninput="selected_season.value = season.value">
+	        	<output name="selected_season" id="selected_season">2015</output>
+	    	    <button class="but" type="button" onclick=" drawallseasons (); drawbarchart('All seasons')" >Click here for all seasons!</button>
+	    	</form>
+	    	<p class="label1">Select stat:    <span id="dropdown"> 
+    			</span> 
+	    	<p class="label1">Select a team using map below:    <button class="but" type="button" onclick=" drawallteams ()" >Click here for all teams!</button> <br />
+	    		<div id="map">
+    			</div>
+    		</div>
+    		<div id="stats">
+    			<span id="statsmenu1">
+    			Team: <br /> 
+    			</span>
+    			<span id="statsmenu2">
+    			Season: <br />
+    			</span>
+    			<span id="statsmenu3">
+    			Stat Selection: <br />
+    			</span>
+    			<div id="barchart">
+    			</div>
+    		</div>
+    	</div>
+    	<script src="script.js"></script>
+		<p>References  <br />
+		<a  href="http://www.football-data.co.uk/englandm.php"
+		target="_blank"> football-data.co.uk</a> <br />
+		<a  href="http://www.telegraph.co.uk/sport/football/competitions/premier-league/9514149/Graphic-Premier-League-transfer-and-wage-spending-from-the-200001-season-to-201112.html"
+		target="_blank"> Telegraph Sport</a> <br />
+		<a  href="http://talksport.com/magazine/features/2011-06-10/premier-league-football-clubs-wage-totals-revealed-where-does-your-club-rank?p=17"
+		target="_blank"> TalkSport</a> <br />
+		<a  href="https://www.theguardian.com/football/2015/apr/29/premier-league-finances-club-by-club"
+		target="_blank"> Guardian Sport</a> <br />
+		</p>
+	</body>
+</html>
